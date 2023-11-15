@@ -1,0 +1,25 @@
+<h1>Lista de Atividades</h1>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <td>Código</td>
+            <td>Número da Atividade</td>
+            <td>Nome da Atividade</td>
+        </tr>
+    </thead>
+
+{{#each valores}}
+
+    <tbody>
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.num_atividade}}</td>
+            <td>{{this.nome_atividade}}</td>
+        </tr>
+    </tbody>
+
+
+    {{/each}}
+</table>
+<hr>

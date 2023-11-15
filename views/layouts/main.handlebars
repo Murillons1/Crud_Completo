@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+</head>
+<body>
+    {{#if log}}
+    <header>
+        <nav>
+            <a>{{usuario}}</a>
+            <a href="/cadastra_a">Cadastrar Atividade</a>
+            <a href="/cadastra_s">Cadastrar Setor</a>
+            <a href="/atualiza_a">Atualiza Atividade</a>
+            <a href="/atualiza_s">Atualiza Setor</a>
+            <a href="/lista_a">Lista Atividade</a>
+            <a href="/lista_s">Lista Setor</a>
+            <a href="/apaga_a">Apaga Atividade</a>
+            <a href="/apaga_s">Apaga Setor</a>
+            <a href="/logout">Sair</a>
+        </nav>
+    </header>
+    
+    {{else}}
+
+    <header>
+        <nav>
+            <a href="/">Login</a>
+            <p>{{msg}}</p>
+        </nav>
+    </header>
+
+    {{/if}}
+
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

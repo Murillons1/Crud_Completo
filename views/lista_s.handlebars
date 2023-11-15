@@ -1,0 +1,25 @@
+<h1>Lista de Setores</h1>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <td>Código</td>
+            <td>Número do Setor</td>
+            <td>Nome do Setor</td>
+        </tr>
+    </thead>
+
+{{#each valores}}
+
+    <tbody>
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.num_setor}}</td>
+            <td>{{this.nome_setor}}</td>
+        </tr>
+    </tbody>
+
+
+    {{/each}}
+</table>
+<hr>
